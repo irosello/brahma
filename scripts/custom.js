@@ -99,6 +99,7 @@ var sectionwidth = $("section").width();
 var nosotros = sectionwidth * 0 ;
 var tapa = sectionwidth * 1;
 var ingredientes = sectionwidth * 2;
+var musa = sectionwidth * 3;
 var chopp = sectionwidth * 4;
 var malta = sectionwidth * 5;
 var familia = sectionwidth * 6 ;
@@ -113,18 +114,26 @@ $("#nosotros").click(function() {
   $("main").animate({
   	scrollLeft: nosotros
   });
-});
+	
 
 $("#malta").click(function() {
 	$("main").animate({
   	scrollLeft: malta
   });
+	$(".nosotros_tapa .invisible").addClass("showRight");
+	$(".nosotros_ingredientes .invisible").addClass("showRight");
+	$(".nosotros_musa .invisible").addClass("showRight");
+	$(".nosotros_chopp .invisible").addClass("showRight");
 });
 
 $("#familia").click(function() {
   $("main").animate({
   	scrollLeft: familia
   });
+	$(".nosotros_tapa .invisible").addClass("showRight");
+	$(".nosotros_ingredientes .invisible").addClass("showRight");
+	$(".nosotros_musa .invisible").addClass("showRight");
+	$(".nosotros_chopp .invisible").addClass("showRight");
 });
 
 
@@ -179,12 +188,12 @@ $(document).ready(function(){
 		var scrolling2 = $(this).scrollLeft();
 		if (scrolling2 >= nosotros && scrolling2 < tapa) {
 			$(".hamburger span").removeClass("title_white");
-			$(".hamburger span").addClass("title_red");			
+			$(".hamburger span").addClass("title_red");
 		}
 		else if (scrolling2 >= tapa && scrolling2 < ingredientes){
 			$(".hamburger span").removeClass("title_red");
 			$(".hamburger span").addClass("title_white");
-			$(".nosotros_tapa .invisible").addClass("showRight");
+
 		}
 		else if (scrolling2 >= ingredientes && scrolling2 < chopp) {
 			$(".hamburger span").removeClass("title_white");
@@ -225,5 +234,25 @@ $(document).ready(function(){
 			$(".social ul li i").removeClass("white");
 			$(".social ul li i").addClass("red");
 		}
+	})
+	$("main").scroll(function(){
+		var scrolling = $(this).scrollLeft();
+	  function calc(section, multiplier){
+			 var a = section * multiplier;
+			 return a;
+		 }
+		if (scrolling >= calc(tapa, 0.7) && scrolling <= tapa  ){
+			$(".nosotros_tapa .invisible").addClass("showRight");
+		}
+		else if (scrolling >= calc(ingredientes, 0.8) && scrolling <= ingredientes  ) {
+			$(".nosotros_ingredientes .invisible").addClass("showRight");
+		}
+		else if (scrolling >= calc(musa, 0.85) && scrolling <= musa ) {
+			$(".nosotros_musa .invisible").addClass("showRight");
+		}
+		else if (scrolling >= calc(chopp, 0.9) && scrolling <= chopp ) {
+			$(".nosotros_chopp .invisible").addClass("showRight");
+		};
+
 	})
 })
