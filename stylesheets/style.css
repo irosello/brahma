@@ -49,10 +49,10 @@
 @keyframes slideDown {
   from {
     opacity: 0;
-    padding-top: 50px; }
+    padding-bottom: 50px; }
   to {
     opacity: 1;
-    padding-top: 0; } }
+    padding-bottom: 0; } }
 @font-face {
   font-family: TradeGothic;
   src: url(../fonts/TradeGothicLTStd-BD2Obl.otf); }
@@ -3842,6 +3842,10 @@ footer, header, hgroup, menu, nav, section {
     list-style-type: none; }
     .social ul li i {
       color: #E02127; }
+    .social ul li a {
+      cursor: pointer; }
+    .social ul li a:hover i {
+      text-shadow: 0px 0px 5px white; }
   .social .white {
     color: white; }
   .social .red {
@@ -4163,7 +4167,7 @@ body.landing {
       margin-left: 7.8%; }
 
 body.landing section.malta {
-  max-width: 100vw; }
+  overflow: hidden; }
   body.landing section.malta video {
     min-height: 100vh;
     min-width: 100vw;
@@ -4173,7 +4177,6 @@ body.landing section.malta {
   body.landing section.malta div {
     text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh; }
   body.landing section.malta p {
@@ -4183,7 +4186,9 @@ body.landing section.malta {
     line-height: 90%;
     text-transform: uppercase;
     color: white;
-    position: absolute; }
+    position: absolute;
+    width: 100%;
+    margin-left: -6px; }
 
 .familia {
   height: 100vh;
@@ -4378,6 +4383,9 @@ body.landing section.malta {
     font-size: 40px; } }
 @media screen and (max-width: 414px) {
   .nosotros_video aside {
+    width: 100vw; }
+
+  .menu {
     width: 100vw; } }
 @media screen and (max-width: 767px) and (min-height: 665px) {
   .validator img {
