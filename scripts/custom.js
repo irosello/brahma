@@ -114,7 +114,7 @@ $("#nosotros").click(function() {
   $("main").animate({
   	scrollLeft: nosotros
   });
-	
+})
 
 $("#malta").click(function() {
 	$("main").animate({
@@ -241,18 +241,21 @@ $(document).ready(function(){
 			 var a = section * multiplier;
 			 return a;
 		 }
-		if (scrolling >= calc(tapa, 0.7) && scrolling <= tapa  ){
+		if (scrolling >= calc(tapa, 0.65) && scrolling <= tapa  ){
 			$(".nosotros_tapa .invisible").addClass("showRight");
 		}
-		else if (scrolling >= calc(ingredientes, 0.8) && scrolling <= ingredientes  ) {
+		else if (scrolling >= calc(ingredientes, 0.7) && scrolling <= ingredientes  ) {
 			$(".nosotros_ingredientes .invisible").addClass("showRight");
 		}
-		else if (scrolling >= calc(musa, 0.85) && scrolling <= musa ) {
+		else if (scrolling >= calc(musa, 0.8) && scrolling <= musa ) {
 			$(".nosotros_musa .invisible").addClass("showRight");
 		}
-		else if (scrolling >= calc(chopp, 0.9) && scrolling <= chopp ) {
+		else if (scrolling >= calc(chopp, 0.85) && scrolling <= chopp ) {
 			$(".nosotros_chopp .invisible").addClass("showRight");
-		};
+		}
+		else if (scrolling >= calc(malta, 0.9) && scrolling <= malta) {
+			$(".malta .invisible").addClass("slideDown");
+		}
 
 	})
 })

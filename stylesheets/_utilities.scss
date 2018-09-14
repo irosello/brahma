@@ -98,3 +98,18 @@ $largerFont: 10.33vh;  //111.65px
     	padding-left:0;
     }
 }
+
+.slideDown {
+	animation: slideDown 1s  forwards;
+}
+
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		padding-top: 50px;
+	}
+	to {
+		opacity: 1;
+		padding-top: 0;
+	}
+}
