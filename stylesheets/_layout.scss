@@ -21,12 +21,26 @@
       i {
         color:$social-red;
       }
+      a {cursor:pointer;}
+      a:hover i {
+         text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
+        }
+      }
     }
-  }
+  
   .white {
     color:white;
   }
   .red {
     color:$social-red;
   }
+}
+
+
+a:focus,
+a:active {
+  color:white;
+}
+a:visited {
+  color:$validation-red;
 }
