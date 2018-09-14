@@ -75,15 +75,15 @@ $largerFont: 10.33vh;  //111.65px
 	animation: slideRight 1s forwards;
 }
 @keyframes slideRight {
-    from {margin-left: inherit;}
+    from {margin-left: 0;}
     to {margin-left:-413px;}
 }
 .slideLeft {
-	animation: slideLeft 1s reverse forwards;
+	animation: slideLeft 1s forwards;
 }
 @keyframes slideLeft {
-    from {margin-left: inherit;}
-    to {margin-left:-413px;}
+    from {margin-left:-413px;}
+    to {margin-left:0;}
 }
 .showRight {
 	animation: showRight 1s forwards ;

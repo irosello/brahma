@@ -30,3 +30,12 @@
     color:$social-red;
   }
 }
+
+
+a:focus,
+a:active {
+  color:white;
+}
+a:visited {
+  color:$validation-red;
+}
