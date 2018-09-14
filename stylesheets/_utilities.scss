@@ -58,6 +58,9 @@ $largerFont: 10.33vh;  //111.65px
 .hide {
 	display:none !important;
 }
+.invisible {
+	opacity:0;
+}
 
 .slideUp {
 	animation: slideUp 1s forwards;
@@ -82,5 +85,16 @@ $largerFont: 10.33vh;  //111.65px
     from {margin-left: inherit;}
     to {margin-left:-413px;}
 }
-
-
+.showRight {
+	animation: showRight 1s forwards ;
+}
+@keyframes showRight {
+    from {
+    	opacity: 0;
+    	padding-left:50px;
+    }
+    to {
+    	opacity: 1;
+    	padding-left:0;
+    }
+}

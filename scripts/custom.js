@@ -179,11 +179,12 @@ $(document).ready(function(){
 		var scrolling2 = $(this).scrollLeft();
 		if (scrolling2 >= nosotros && scrolling2 < tapa) {
 			$(".hamburger span").removeClass("title_white");
-			$(".hamburger span").addClass("title_red");
+			$(".hamburger span").addClass("title_red");			
 		}
 		else if (scrolling2 >= tapa && scrolling2 < ingredientes){
 			$(".hamburger span").removeClass("title_red");
 			$(".hamburger span").addClass("title_white");
+			$(".nosotros_tapa .invisible").addClass("showRight");
 		}
 		else if (scrolling2 >= ingredientes && scrolling2 < chopp) {
 			$(".hamburger span").removeClass("title_white");

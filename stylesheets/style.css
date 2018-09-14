@@ -6,6 +6,9 @@
 .hide {
   display: none !important; }
 
+.invisible {
+  opacity: 0; }
+
 .slideUp {
   animation: slideUp 1s forwards; }
 
@@ -30,6 +33,16 @@
     margin-left: inherit; }
   to {
     margin-left: -413px; } }
+.showRight {
+  animation: showRight 1s forwards; }
+
+@keyframes showRight {
+  from {
+    opacity: 0;
+    padding-left: 50px; }
+  to {
+    opacity: 1;
+    padding-left: 0; } }
 @font-face {
   font-family: TradeGothic;
   src: url(../fonts/TradeGothicLTStd-BD2Obl.otf); }
