@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center left;
-  //z-index:-3;
+  z-index:-1;
   div {
     height: 100vh;
     //width: 100vw;
@@ -18,7 +18,7 @@
       bottom:0;
       right:3%;
       max-height:120vh;
-      //z-index:-1;
+      position:fixed;
 
     }
     p {

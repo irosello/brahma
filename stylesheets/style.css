@@ -4263,7 +4263,8 @@ body.landing section.malta {
   background-image: url(../img/backgroundsuave.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center left; }
+  background-position: center left;
+  z-index: -1; }
   .suave div {
     height: 100vh;
     display: flex;
@@ -4273,7 +4274,8 @@ body.landing section.malta {
       position: absolute;
       bottom: 0;
       right: 3%;
-      max-height: 120vh; }
+      max-height: 120vh;
+      position: fixed; }
     .suave div p {
       font-family: TradeGothicbold,TradegGothicboldie,arial;
       font-size: 10.33vh;
