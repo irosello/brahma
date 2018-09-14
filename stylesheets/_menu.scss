@@ -1,0 +1,140 @@
+.menu {
+  width: 413px;
+  height: 100vh;
+  padding:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content:  center;
+  text-align: right;
+  background:white;
+  box-sizing:border-box;
+  position:fixed;
+  z-index: map-get($zindex, menu);
+  cursor:default;
+  margin-left:-413px;
+
+  .close {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor:pointer;
+  }
+
+
+  li   {
+    font-family: TradeGothicbold;
+    font-size: 37px;
+    letter-spacing: -0.05em;
+    line-height: 83%;
+    text-transform:uppercase;
+    color:$primary-red;
+    list-style: none;
+    cursor:pointer;
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+
+    &:last-child {
+      padding:0;
+      margin: 0;
+    }
+
+    &:not(.maltaspan):hover:before {
+      display: inline-block;
+      width: 45px;
+      height: 10px;
+      content: "";
+      background: url(../img/redarrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      margin-bottom: 10px;
+      margin-right: 20px;
+
+    }
+
+  }
+  li:nth-child(2):hover:before {
+    display: inline-block;
+    width: 45px;
+    height: 10px;
+    content: "";
+    background: url(../img/redarrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 40px;
+  }
+}
+
+
+*[class*="title_"] {
+  font-family: TradeGothicbold;
+  font-size: 27px;
+  text-transform:uppercase;
+  line-height: 120%;
+  list-style: none;
+
+  &::after {
+    margin-left:3px;
+    display:inline-block;
+  }
+  &::before {
+    display: inline-block;
+    width: 28px;
+    transform:rotate(90deg);
+  }
+}
+
+.hamburger {
+    //transform:rotate(-90deg);
+    position: absolute;
+    bottom: 233px;
+    left: -185px;
+    z-index: map-get($zindex, hamburger);
+    cursor:pointer;
+    width:450px;
+    height:35px;
+    transform:rotate(-90deg);
+
+
+    .title_nosotros {
+      &::after {
+        content:'Nosotros';
+      }
+    }
+}
+
+.title_malta {
+  &::after {
+    content:'la cantidad justa de malta';
+  }
+}
+
+.title_familia {
+  &::after {
+    content:'familia brahmera';
+  }
+}
+
+.title_none {
+  &::before {
+    content:url(../img/hamburger_white.svg);
+  }
+}
+
+.title_white {
+  color:white;
+  &::before {
+    content:url(../img/hamburger_white.svg);
+  }
+
+}
+
+.title_red {
+  color: $social-red;
+  &::before {
+    content:url(../img/hamburger_red.svg);   
+  }
+}

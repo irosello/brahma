@@ -1,0 +1,25 @@
+body.landing {
+	overflow:hidden;
+
+	main.dragscroll {
+		max-width: 100%;
+		overflow: scroll;
+		overflow-y:hidden;
+		width: 100%;
+		display: block;
+		cursor:grab;
+
+		> div {
+			display:inline-flex;
+		}
+	}
+
+	section {
+		//width:100vw;
+		max-width:1920px;
+		height:100vh;
+		display:inline-table;
+		position:relative;
+	}
+
+}

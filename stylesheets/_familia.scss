@@ -1,0 +1,91 @@
+.familia {
+  height: 100vh;
+  width:100vw;
+  background-image: url(../img/backgroundfamilia.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  div {
+    height: 100vh;
+    //width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  ul {
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px 0 10px;
+    position:relative;
+
+     &:hover:before {
+        content: "";
+        width: 100%;
+        display: block;
+        background-image: url(../img/redarrowdown.svg);
+        background-size: contain;
+        position: absolute;
+        height: 7vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: -8vh;
+      }
+
+    &:nth-child(1) img {
+        height:9.25vh;
+    }
+    &:nth-child(2) img {
+        height:18.05vh;
+    }
+    &:nth-child(3) img {
+        height:24.07vh;
+    }
+    &:nth-child(4) img {
+        height:41.2vh;
+    }
+    &:nth-child(5) img {
+        height:52.3vh;
+    }
+    &:nth-child(6) img {
+        height:53.79vh;
+    }
+    &:nth-child(7) img {
+        height:26.11vh;
+    }
+
+    img {
+      margin-bottom: 1.85vh;
+    }
+    span {
+      font-family: TradeGothicbold,TradegGothicboldie,arial;
+      font-size: $smallerFont;
+
+      letter-spacing: -0.05em;
+      line-height: 103%;
+      color: $social-red;
+      display: block;
+    }
+  }
+  p {
+    display: inline-block;
+    font-family: TradeGothicbold,TradegGothicboldie,arial;
+    font-size: $smallFont;
+    letter-spacing: -0.05em;
+    line-height: 103%;
+    text-transform: uppercase;
+    color:transparent;
+    margin-top: 6.48vh;
+
+
+  }
+  .transparent {
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    
+  }
+}

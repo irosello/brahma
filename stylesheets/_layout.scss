@@ -1,0 +1,32 @@
+.logo img {
+  width: 137px;
+  height: 71px;
+  position: fixed;
+  top: 30px;
+  left: 35px;
+  z-index: map-get($zindex, logo);
+}
+
+.social {
+  position: fixed;
+  bottom: 30px;
+  right: 35px;
+  z-index: map-get($zindex, social);
+  ul {
+    li {
+      display: inline-block;
+      font-size: 26px;
+      margin: 0 7.5px 0 7.5px;
+      list-style-type:none;
+      i {
+        color:$social-red;
+      }
+    }
+  }
+  .white {
+    color:white;
+  }
+  .red {
+    color:$social-red;
+  }
+}

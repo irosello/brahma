@@ -1,0 +1,42 @@
+.nosotros_musa {
+height: 100vh;
+width: 100vw;
+background-color: $musa_yellow;
+background-image: url(../img/backgroundmusa.png);
+background-size: cover;
+background-position: right center;
+
+
+div {
+  display: flex;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+img {
+  height: 100vh;
+  display: inline-block;
+  margin-left: -15px;
+  //margin-right: -115px;
+  z-index: map-get($zindex, latas);
+}
+p {
+  font-family: TradeGothicbold,TradegGothicboldie,arial;
+  font-size: $largeFont;
+  letter-spacing: -0.05em;
+  line-height: 91%;
+  text-transform: uppercase;
+  color: white;
+  margin-left: 5.6%;
+
+  }
+}

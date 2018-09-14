@@ -1,0 +1,59 @@
+.nosotros_tapa {
+  display:flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #E52127;
+  background-image: url(../img/backgroundtapa.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center center;
+    > div {
+    //margin-left: 14vw;
+    //margin-top: 19vh;
+    display:flex;
+    align-items:center;
+    //justify-content:flex-end;
+    height:100vh;
+    @extend %clearfix;
+    img {
+      height: 67vh;
+      float:left;
+    }
+    > div {
+      margin-left:50.7%;
+      p {
+        font-size: 6.65vh;
+        letter-spacing: -0.05em;
+        font-family: TradeGothicbold,TradegGothicboldie,arial;
+        color: white;
+        text-transform: uppercase;
+        line-height: 105%;
+        //margin: 6.1% 0 0 -4%;
+      }
+      span {
+        display: block;
+        font-size: 2.25vh;
+        letter-spacing: -0.05em;
+        font-family: TradeGothicbold;
+        color: white;
+        text-transform: uppercase;
+        line-height: 103%;
+        margin-top: 10px;
+        animation: stillPointRight 0.7s infinite ease-in-out;
+        //margin-left: -4%;
+        &::after {
+          content: url(../img/whitearrow.svg);
+          display: inline-block;
+          height: $smallerFont;
+          width: 46px;
+          margin-left: 10px;
+        }
+    }
+  }
+
+}
+}
+@keyframes stillPointRight {
+    from {margin-left: 0;}
+    to {margin-left:5px;}
+}

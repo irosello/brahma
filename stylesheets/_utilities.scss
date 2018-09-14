@@ -1,0 +1,86 @@
+
+// COLORS
+
+$primary-red: #E12629;
+$validation-red:#da2127;
+$social-red:#E02127;
+$brand-red:#c72b2d;
+$menu-font-red:#e12629;
+$validation-yellow:#f3cc23;
+$musa-yellow:#ffcb00;
+
+
+// FONT SIZES
+// Se prueba el tamaño en vw aprox en 1920 para que dé lo mismo en px que el mockup
+
+// font-size: 5.28vw; 101.376px
+// font-size: 4.95vw; 95.04px
+// font-size: 4.71vw; 90.432px
+// font-size: 4.69vw; 90.048 px
+// font-size: 3.18vw; 61.056px
+// font-size:    2vw; 38.4px
+// font-size: 1.04vw; 19.968px
+
+
+
+// CLEARFIX (Al padre de los divs que contengan float)
+
+%clearfix {
+	&:after {
+		content: "";
+	    clear: both;
+	    display: table;
+	}
+}
+
+
+// Z-INDEX
+
+$zindex: (
+	latas:     1,
+	menu:      2,
+	social:    2,
+	logo:      3,
+	hamburger: 3,
+);
+
+// FONT SIZES
+
+$smallerFont: 1.85vh;  //20px
+$smallFont:   3.56vh;  //38.5px
+$regularFont: 5.64vh;  //61px
+$mediumFont:  8.33vh;  //90px
+$largeFont:   8.79vh;  //95px
+$largerFont: 10.33vh;  //111.65px
+
+// Clases auxiliares
+
+.hide {
+	display:none !important;
+}
+
+.slideUp {
+	animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    from {margin-top: inherit;}
+    to {margin-top:-106vh;}
+}
+
+.slideRight {
+	animation: slideRight 1s forwards;
+}
+@keyframes slideRight {
+    from {margin-left: inherit;}
+    to {margin-left:-413px;}
+}
+.slideLeft {
+	animation: slideLeft 1s reverse forwards;
+}
+@keyframes slideLeft {
+    from {margin-left: inherit;}
+    to {margin-left:-413px;}
+}
+
+

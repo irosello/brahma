@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+  <title>Brahma</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <!--<meta name="robots" content="noindex">-->
+</head>
+
+<body class="landing">
+
+  <!-- AGE VERIFICATION -->
+  <div class="validator">
+
+    <img src="img/bienvenidolata.png" alt="bienvenido">
+
+    <div class="age-verification">
+      <span>¿tenés la edad justa para disfrutar una brahma?</span>
+      <div>
+        <a href="javascript:void(0)" id="mayor">
+          <span>sí, tengo más de 18 años</span>
+        </a>
+        <a href="http://www.vivamosresponsablemente.com/">
+          <span>no, tengo menos de 18 años</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!-- end AGE VERIFICATION -->
+
+  <main class="dragscroll">
+    <div>
+
+      <!-- LAYOUT -->
+      <div class="logo hide">
+        <img src="img/brahmalogo.svg" alt="Brahma Logo">
+      </div>
+			<!--menu-->
+		<div class="hamburger">
+			<span class="title_nosotros title_red"></span>
+		</div>
+
+		<nav class="menu">
+			<img src="img/cross.svg" class="close">
+			<ul>
+				<li id="nosotros">nosotros</li>
+				<li id="malta">la cantidad<br> justa de malta</li>
+				<!--<li id="beneficios">beneficios</li>-->
+				<li id="familia">familia brahmera</li>
+				<!--<li id="brahmas">brahmas</li>-->
+				<!--<li id="musica">música</li>-->
+			</ul>
+		</nav>
+
+      <div class="social hide">
+        <ul>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+          <li><i class="fab fa-spotify"></i></li>
+        </ul>
+      </div>
+      <!-- end LAYOUT -->
+
+      <section class="nosotros_video">
+        <div>
+          <aside>
+            <p>Nos renovamos<br>y te lo queremos<br>mostrar.</p>
+            <span>scroleá</span>
+          </aside>
+        </div>
+      </section>
+
+      <section class="nosotros_tapa">
+        <div>
+          <div>
+            <p>Nos inspiramos<br> en varios elementos<br> de nuestra<br> primera etiqueta.<br> Cumplimos 130 años<br> pero seguimos atr.</p>
+            <span>seguí scrolleando</span>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="nosotros_ingredientes">
+        <div>
+            <img src="img/lataingredientes.png" alt="Lata ingredientes">
+          <div class="ingredientes">
+            <p>Malta, lúpulo,<br> cereales<br> cerveceros.<br> Los mejores<br> ingredientes<br> desde siempre.<br> Ahora, también<br> en nuestro pack.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="nosotros_musa">
+        <div>
+          <img src="img/latamusa.png" alt="Lata musa">
+          <div>
+            <p>Ella nos inspira<br> desde 1888.<br> ¿Viste?<br> Tenemos una musa<br> con historia.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="nosotros_chopp">
+        <div>
+          <img src="img/botellachopp.png" alt="botella">
+          <div>
+            <p>Chopp es nuestra<br> promesa de una cerveza<br> suave y refrescante.<br> Su símbolo junto a<br> la estrella, señalizaba<br> dónde encontrar<br> una buena cerveza.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="malta">
+        <div>
+         <video autoplay muted loop>
+           <source src="video/WEB_MaltaJusta.mp4" type=video/mp4>
+         </video>
+
+          <p>Brahma tiene la cantidad justa de malta<br> por eso es suave y refrescante</p>
+        </div>
+
+      </section>
+
+			<section class="familia">
+        <div>
+  				<ul>
+  					<li id="269"><img class="family" src="img/lata250.png" alt="lata 269cm3"><span class="family">269 cc</span></li>
+  					<li id="355"><img class="family" src="img/lata355.png" alt="lata 355cm3"><span class="family">354 cc</span></li>
+  					<li id="473"><img class="family" src="img/lata473.png" alt="lata 473cm3"><span class="family">473 cc</span></li>
+  					<li id="ln"><img class="family" src="img/porron.png" alt="long neck"><span class="family">340 cc</span></li>
+  					<li id="1l"><img class="family" src="img/botellalitro.png" alt="botella litro"><span class="family">1 LT</span></li>
+  					<li id="12l"><img class="family" src="img/botellalitroveinte.png" alt="botella litro veinte"><span class="family">1.2 LT</span></li>
+  					<li id="sixpack"><img class="family" src="img/sixpack.png" alt="sixpack lata"><span class="family">SIXPACK 473 cc</span ></li>
+  				</ul>
+          <p id="textofamilia">Una brahmita entre semana no se le niega a nadie</p>
+        </div>
+      </section>
+
+      <section class="suave">
+        <div>
+            <p>Suave. Refrescante.</p>
+            <img src="img/botellasuave.png" alt="Botella de Brahma">
+        </div>
+      </section>
+
+  </main>
+
+<!-- SCRIPTS -->
+  <!-- JQUERY -->
+  <script src="scripts/thirdparty/jquery-3.3.1.min.js"></script>
+  <!-- MOUSEWHEEL CAPTURE -->
+  <script src="scripts/thirdparty/jquery.mousewheel.js"></script>
+  <!-- DRAG -->
+  <script type="text/javascript" src="scripts/thirdparty/dragscroll.js"></script>
+  <!-- CUSTOM JS -->
+  <script src="scripts/custom.js" type="text/javascript"></script>
+<!-- end SCRIPTS  -->
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+@media screen and (max-width: 1024px) {
+.familia {
+  img {
+    max-height: 50vh;
+    max-width: 100%;
+  }
+  li {
+    margin: 0;
+  }
+}
+}
+
+/*@media screen and (max-width: 960px) {
+.validator {
+  .age-verification {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+     span {
+      padding: 0;
+    }
+    > div a:last-child {
+      margin: 0;
+      padding: 10px;
+    }
+  }
+ }
+}*/
+@media screen and (max-width:1199px){
+  .nosotros_video aside {
+    //width: auto;
+    //padding: 20px;
+    p {
+      font-size: 25px;
+    }
+    span {
+      margin-right: 0;
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width:991px) {
+  /*.landing {
+      section {
+     width: 200vw !important;
+   }
+ }*/
+
+ .nosotros_musa {
+   background-position: top;
+ }
+
+  .validator {
+    .age-verification {
+      width:100%;
+      margin-left:0;
+    }
+  }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+  .validator {
+    .age-verification {
+      > div a {
+        font-size:27px;
+      }
+      > span {
+        font-size:34px;
+      }
+    }
+  }
+}
+@media screen and (max-width:767px) {
+  /*.nosotros_chopp div {
+    p {
+      margin-left: 90px;
+      font-size: 50px;
+    }
+  }
+  .nosotros_ingredientes{
+    p {
+      margin-left: 150px;
+    }
+  }
+  .nosotros_musa, .nosotros_ingredientes {
+    p {
+      font-size: 50px;
+    }
+  }*/
+
+  .logo {
+    img {
+      width: 100px;
+      top:15px;
+      left: 22.5px;
+    }
+  }
+    .social ul li  {
+       font-size: 20px;
+    }
+
+
+  .validator {
+    img {
+      height: 60vh;
+    }
+    .age-verification {
+      > div a {
+        display:block;
+        width:100%;
+        font-size:20px;
+        margin:0 0 15px 0 !important;
+        &:last-child {
+          margin-bottom:0;
+        }
+      }
+      > span {
+        font-size:25px;
+      }
+    }
+  }
+}
+
+
+/*@media screen and  (max-width:479px){
+  .landing {
+    section {
+      width: 300vw !important;
+    }
+  }
+}*/
+
+@media screen and (max-width:320px){
+  .nosotros_chopp div {
+    p {
+      margin-left: 90px;
+      font-size: 40px;
+    }
+  }
+  .nosotros_ingredientes{
+    p {
+      margin-left: 100px;
+    }
+  }
+  .nosotros_musa, .nosotros_ingredientes {
+    p {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (max-width:414px) {
+  .nosotros_video {
+    aside {
+      width:100vw;
+    }
+  }
+}
+
+
+// Sólo para la imagen en validator
+@media screen and (max-width:767px) and (min-height:665px) {
+  .validator {
+    img {
+      height: 60.5vh;
+      padding-top:19vh;
+    }
+  }
+}
+@media screen and (min-height:1081px) {
+  .validator {
+    img {
+      height: 65vh;
+      padding-top: 25vh;
+    }
+  }
+}
+

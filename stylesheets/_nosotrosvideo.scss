@@ -1,0 +1,66 @@
+.nosotros_video {
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  background-image: url(../img/backgroundstart.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+
+  > div {
+    display:flex;
+  }
+
+  aside {
+    width: 415px;
+    height: 100vh;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    text-align: right;
+    text-transform: uppercase;
+    background:white;
+    box-sizing:border-box;
+
+
+    img {
+      display: inline-block;
+      height: 10px;
+      width: 45px;
+    }
+
+    p {
+      color: $primary-red;
+      font-family: TradeGothicbold,TradegGothicboldie,arial;
+      font-size: 37px;
+      letter-spacing: -0.05em;
+      line-height:105%;
+    }
+
+    span {
+      display: inline-block;
+      color:$social-red;
+      font-size:20px;
+      font-family: TradeGothicbold,TradegGothicboldie,arial;
+      letter-spacing: -0.05em;
+      //margin-right: 10px;
+
+      &::after {
+        content: url(../img/redarrow.svg);
+        display: inline-block;
+        height: 0.99vw;
+        width: 46px;
+        margin-left: 10px;
+        animation: pointRight 0.7s infinite ease-in-out;
+
+      }
+    }
+  }
+
+
+}
+@keyframes pointRight {
+    from {margin-right: inherit;}
+    to {margin-right:-1%;}
+}
